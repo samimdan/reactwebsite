@@ -3,8 +3,12 @@ import { useState } from "react";
 import "./Navbar.css";
 import logo from "../../assets/logo.png";
 
+/**
+ * Navbar component displays a navigation bar with menu options and a login section.
+ */
 const Navbar = () => {
   const [menu, setMenu] = useState("shop");
+
   return (
     <div className="navbar flex justify-around items-center poppins-regular ">
       <div className="nav-logo flex justify-center items-center gap-2">
@@ -35,7 +39,7 @@ const Navbar = () => {
           }}
           className={menu === "women" ? "menu-clicked" : "menu-not-clicked"}
         >
-          Woman
+          Women
         </li>
         <li
           onClick={() => {
